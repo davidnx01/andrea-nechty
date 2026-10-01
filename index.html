@@ -1,0 +1,274 @@
+<!doctype html><html lang="sk"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Andrea_nechty · nechtový salón v Bytči — neoficiálny návrh</title>
+<meta name="description" content="Neoficiálny návrh webu pre Andrea_nechty, Stanislava Biroša 660, Bytča: gélové nechty, polygel, japonská a pánska manikúra.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Nunito+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --backing:#E6E2EC;   /* zem: podkladový papier hárku nálepiek */
+  --sheet:#FCFAFC;
+  --ink:#231E36;
+  --ink-2:#5E5872;
+  --cut:rgba(35,30,54,.22);  /* výsekové linky */
+  --neon:#E8296F;      /* akcent: neónovo ružový lak */
+  --neon-dk:#C4185A;
+  --milk:#F5E4E3;      /* materiál: mliečny gél */
+  --blue:#7D97CE;      /* materiál: modrá linka z ich nechtov */
+  --deep:#2A2440;
+  --script:"Lobster",cursive;
+  --sans:"Nunito Sans",system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{background:var(--backing);color:var(--ink);font:400 17px/1.6 var(--sans)}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--neon);outline-offset:3px}
+.in{width:min(1160px,100% - 40px);margin-inline:auto}
+.lbl{font:800 12px/1.3 var(--sans);letter-spacing:.17em;text-transform:uppercase;color:var(--ink-2)}
+.tn{font-variant-numeric:tabular-nums}
+.u{text-decoration:none;background:linear-gradient(currentColor,currentColor) 0 100%/0 1px no-repeat;transition:background-size .2s}
+.u:hover{background-size:100% 1px}
+
+.notice{background:var(--deep);color:#EDE6F5;font-size:13px;line-height:1.45;padding:8px 16px;text-align:center}
+
+header .in{display:flex;align-items:center;gap:30px;min-height:78px}
+.mark{font:400 34px/1 var(--script);text-decoration:none;margin-right:auto;padding-bottom:4px}
+.mark span{color:var(--neon)}
+header nav{display:flex;gap:24px;font-weight:700;font-size:15px}
+header .tel{font-weight:800;font-size:15px;text-decoration:none;white-space:nowrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 24px;border-radius:999px;font:800 15px/1 var(--sans);text-decoration:none;transition:background .2s,color .2s}
+.btn.hot{background:var(--neon);color:#fff}
+.btn.hot:hover{background:var(--neon-dk)}
+.btn.line{box-shadow:inset 0 0 0 1.5px var(--ink)}
+.btn.line:hover{background:var(--ink);color:#fff}
+
+/* hárok = hlavný list */
+.sheet{background:var(--sheet);border-radius:22px;position:relative}
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;padding:56px 56px 64px;min-height:min(600px,82vh);margin-top:6px}
+.hero h1{margin:16px 0 18px}
+.hero h1 b{display:block;font:400 clamp(58px,7.4vw,100px)/.95 var(--script);color:var(--ink);letter-spacing:-.005em}
+.hero h1 span{display:block;font:700 clamp(19px,1.9vw,23px)/1.3 var(--sans);color:var(--ink-2);margin-top:14px}
+.hero blockquote{font:400 italic 18px/1.5 var(--sans);color:var(--ink);max-width:36ch;padding-left:16px;border-left:3px solid var(--neon)}
+.hero blockquote cite{display:block;font-style:normal;font-size:13px;color:var(--ink-2);margin-top:4px}
+.acts{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+
+/* nálepky */
+.art{position:relative;justify-self:center;width:min(100%,470px);padding:22px}
+.stk{position:relative;background:#fff;padding:12px;border-radius:34px;outline:1.5px dashed var(--cut);outline-offset:9px}
+.stk img{border-radius:24px;width:100%}
+.photo{transform:rotate(-3deg)}
+.photo::after{content:"";position:absolute;right:-1px;bottom:-1px;width:74px;height:74px;border-radius:0 0 34px 0;
+  background:linear-gradient(135deg,transparent 49%,rgba(35,30,54,.14) 50%,#F1EDF4 53%,#fff 72%);clip-path:polygon(100% 0,100% 100%,0 100%)}
+.dot{position:absolute;display:grid;place-items:center;text-align:center;border-radius:50%;font-weight:800;line-height:1.1}
+.dot.rate{width:132px;height:132px;left:-26px;top:-6px;background:var(--neon);color:#fff;transform:rotate(-10deg);box-shadow:0 0 0 6px #fff}
+.dot.rate b{display:block;font:400 40px/1 var(--script)}
+.dot.rate small{display:block;font-size:11.5px;letter-spacing:.06em;margin-top:2px}
+.pill{position:absolute;right:-18px;bottom:46px;background:var(--blue);color:#fff;font:800 13px/1.2 var(--sans);letter-spacing:.04em;padding:12px 18px;border-radius:999px;transform:rotate(6deg);box-shadow:0 0 0 5px #fff}
+
+/* cenník — tmavý hárok s perforáciou */
+.tear{height:18px;margin-top:60px;background:radial-gradient(circle at 10px 0,transparent 7px,var(--deep) 7.5px) 0 0/20px 18px repeat-x}
+.prices{background:var(--deep);color:#F1ECF7;padding:40px 0 76px}
+.prices-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:14px 40px;margin-bottom:36px}
+.prices h2{font:400 clamp(44px,5vw,64px)/1 var(--script)}
+.prices h2 span{color:var(--neon)}
+.prices-head p{max-width:46ch;color:#C9C1D9;font-size:15px}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.grp{background:rgba(255,255,255,.05);border-radius:20px;padding:30px 30px 18px;outline:1.5px dashed rgba(255,255,255,.2);outline-offset:-8px}
+.grp h3{display:inline-block;font:800 12.5px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;background:var(--milk);color:var(--ink);padding:9px 14px;border-radius:999px;margin-bottom:12px}
+.grp.alt h3{background:var(--neon);color:#fff}
+.row{display:grid;grid-template-columns:1fr auto auto;gap:4px 18px;align-items:baseline;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.12)}
+.row:last-child{border-bottom:0}
+.row .t{font-size:13.5px;color:#B6AEC8;white-space:nowrap}
+.row .p{font-weight:800;font-size:17px;text-align:right;min-width:78px;white-space:nowrap}
+.row .p.call{font-weight:700;color:#F6A8C6;font-size:14px}
+.extra{margin-top:28px}
+.prices .note{font-size:13.5px;color:#B6AEC8;margin-top:26px;max-width:80ch}
+.prices .note a{color:#fff;font-weight:700}
+
+/* galéria = hárok vzoriek */
+.gal{padding:76px 0 30px}
+.gal-head{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:12px 40px;margin-bottom:26px}
+.gal h2,.kon h2{font:400 clamp(40px,4.6vw,58px)/1 var(--script)}
+.gal-head p{color:var(--ink-2);max-width:44ch}
+.board{padding:38px;display:grid;grid-template-columns:repeat(4,1fr);gap:30px}
+.board .stk{padding:9px;border-radius:26px;outline-offset:7px}
+.board .stk img{border-radius:18px;aspect-ratio:1;object-fit:cover}
+.board .big{grid-column:span 2;grid-row:span 2}
+.board figure:nth-child(3n+2){transform:rotate(1.5deg)}
+.board figure:nth-child(4n+3){transform:rotate(-1.8deg)}
+
+/* kontakt */
+.kon{padding:56px 0 70px}
+.kon .sheet{display:grid;grid-template-columns:1.1fr 1fr 1fr;gap:40px;padding:46px 48px}
+.kon .lbl{display:block;margin-bottom:8px}
+.kon address,.kon p{font-style:normal}
+.kon .big-tel{display:inline-block;font:800 27px/1.2 var(--sans);text-decoration:none;margin:2px 0 10px}
+.kon small{display:block;font-size:13px;color:var(--ink-2);margin-top:6px}
+.links{list-style:none}
+.links a{display:flex;align-items:center;min-height:44px;font-weight:800}
+footer{padding:22px 0 26px;font-size:13.5px;color:var(--ink-2);border-top:1px solid var(--cut)}
+footer .in{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.mbar{display:none}
+
+@media (max-width:980px){
+  header nav{display:none}
+  .hero{grid-template-columns:1fr;padding:40px 28px 52px;min-height:0}
+  .cols{grid-template-columns:1fr}
+  .board{grid-template-columns:repeat(2,1fr);padding:26px;gap:22px}
+  .kon .sheet{grid-template-columns:1fr 1fr}
+  .kon .sheet > div:first-child{grid-column:1/-1}
+}
+@media (max-width:640px){
+  .in{width:calc(100% - 32px)}
+  body{font-size:16px}
+  header .in{min-height:64px;gap:14px}
+  .mark{font-size:29px}
+  header .btn{display:none}
+  .hero{padding:30px 20px 44px;border-radius:18px;gap:30px}
+  .hero h1 b{font-size:54px}
+  .art{padding:18px 8px 10px}
+  .dot.rate{width:104px;height:104px;left:-6px;top:-10px}
+  .dot.rate b{font-size:32px}
+  .dot.rate small{font-size:10px}
+  .pill{right:-4px;bottom:28px;font-size:12px;padding:10px 14px}
+  .tear{margin-top:44px}
+  .prices{padding:30px 0 56px}
+  .grp{padding:24px 18px 12px}
+  .row{grid-template-columns:1fr auto;gap:2px 12px}
+  .row .t{grid-column:1;grid-row:2}
+  .row .p{grid-row:1/3;grid-column:2;align-self:center}
+  .board{padding:18px;gap:18px}
+  .board .stk{padding:6px;border-radius:20px;outline-offset:5px}
+  .board .stk img{border-radius:15px}
+  .gal{padding:56px 0 20px}
+  .kon .sheet{grid-template-columns:1fr;padding:30px 22px;gap:28px}
+  footer{padding-bottom:calc(92px + env(safe-area-inset-bottom))}
+  .mbar{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--sheet);padding:10px 12px calc(10px + env(safe-area-inset-bottom));border-top:1.5px dashed var(--cut)}
+  .mbar a{display:flex;align-items:center;justify-content:center;min-height:48px;border-radius:999px;font:800 15px/1 var(--sans);text-decoration:none;box-shadow:inset 0 0 0 1.5px var(--ink)}
+  .mbar a:first-child{background:var(--neon);color:#fff;box-shadow:none}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+
+<div class="notice">Neoficiálny návrh — nie je to oficiálny web podniku · ukážka od webdavid.sk, objednávky ani rezervácie tu nefungujú</div>
+
+<header>
+  <div class="in">
+    <a class="mark" href="#top">Andrea<span>_</span>nechty</a>
+    <nav aria-label="Hlavná navigácia"><a class="u" href="#cennik">Cenník</a><a class="u" href="#vzory">Vzory</a><a class="u" href="#kontakt">Kontakt</a></nav>
+    <a class="tel u tn" href="tel:+421903882418">0903 882 418</a>
+    <a class="btn hot" href="https://www.notino.sk/salony/andrea_nechty/" rel="noopener">Rezervovať na Notino</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="in sheet hero" aria-labelledby="h1">
+    <div>
+      <p class="lbl">Nechtový salón · Bytča</p>
+      <h1 id="h1"><b>Andrea_nechty</b><span>Gélové nechty, polygel a manikúra — dámska aj pánska.</span></h1>
+      <blockquote>„Manikúra je základ a ruky sú vizitkou každej ženy a áno, aj muža.“<cite>— z ich profilu na Notino</cite></blockquote>
+      <div class="acts">
+        <a class="btn hot tn" href="tel:+421903882418">Zavolať 0903 882 418</a>
+        <a class="btn line" href="#cennik">Pozrieť cenník</a>
+      </div>
+    </div>
+    <div class="art">
+      <figure class="stk photo"><img src="assets/nechty-akvarel-kvety.webp" width="1000" height="990" alt="Detail mliečnych gélových nechtov s akvarelovými kvetmi, modrou linkou a trblietkami" fetchpriority="high"></figure>
+      <p class="dot rate"><span><b class="tn">5,0</b><small>Notino · 26 hodnotení</small></span></p>
+      <p class="pill">na objednanie</p>
+    </div>
+  </section>
+
+  <div class="tear" aria-hidden="true"></div>
+  <section class="prices" id="cennik" aria-labelledby="cen-h">
+    <div class="in">
+      <div class="prices-head">
+        <h2 id="cen-h">Cenník<span>.</span></h2>
+        <p>Všetky služby tak, ako sú uvedené na ich profile Notino — s trvaním a cenou. Termín cez telefón alebo Notino.</p>
+      </div>
+      <div class="cols">
+        <div class="grp">
+          <h3>Modeláž nechtov</h3>
+          <div class="row"><span>Nové nechty gélové</span><span class="t tn">1 h 30 min – 2 h</span><span class="p tn">32 – 42 €</span></div>
+          <div class="row"><span>Doplnenie gélových nechtov</span><span class="t tn">1 h 30 min – 2 h</span><span class="p tn">32 – 42 €</span></div>
+          <div class="row"><span>Polygel – nové nechty</span><span class="t tn">1 h 30 min – 2 h</span><span class="p tn">32 – 42 €</span></div>
+          <div class="row"><span>Polygel – doplnenie</span><span class="t tn">1 h 30 min – 2 h</span><span class="p tn">32 – 42 €</span></div>
+          <div class="row"><span>Modeláž nechtov bez pilovania</span><span class="t tn">1 h – 1 h 30 min</span><span class="p tn">26 – 28 €</span></div>
+          <div class="row"><span>Odstránenie gélových nechtov</span><span class="t tn">20 min</span><span class="p tn">5 – 10 €</span></div>
+          <div class="row"><span>Zdobenie nechtov</span><span class="t tn">5 – 20 min</span><span class="p tn">2 – 5 €</span></div>
+          <div class="row"><span>Oprava zlomeného nechtu</span><span class="t tn">15 min</span><span class="p tn">3 €</span></div>
+        </div>
+        <div>
+          <div class="grp alt">
+            <h3>Manikúra</h3>
+            <div class="row"><span>Japonská manikúra P-Shine</span><span class="t tn">45 min</span><span class="p tn">15 €</span></div>
+            <div class="row"><span>IBX manikúra</span><span class="t tn">35 min</span><span class="p tn">17 €</span></div>
+            <div class="row"><span>Suchá manikúra bez lakovania</span><span class="t tn">30 min</span><span class="p tn">14 €</span></div>
+            <div class="row"><span>Pánska manikúra</span><span class="t tn">30 min</span><span class="p tn">14 €</span></div>
+            <div class="row"><span>Lakovanie nechtov na rukách gél lakom</span><span class="t tn">1 h – 1 h 30 min</span><span class="p tn">26 – 28 €</span></div>
+            <div class="row"><span>Parafínový zábal na ruky</span><span class="t tn">45 min</span><span class="p tn">14 €</span></div>
+            <div class="row"><span>Odstránenie gél laku na rukách</span><span class="t tn">20 min</span><span class="p tn">15 €</span></div>
+          </div>
+          <div class="grp extra">
+            <h3>Ďalšie</h3>
+            <div class="row"><span>Francúzska manikúra (zdobenie)</span><span class="t tn">15 min</span><span class="p call">cena telefonicky</span></div>
+            <div class="row"><span>Konzultácia</span><span class="t tn">20 min</span><span class="p call">cena telefonicky</span></div>
+          </div>
+        </div>
+      </div>
+      <p class="note">Ceny a trvanie podľa profilu na Notino (1. 10. 2026), overiť. Pri položkách „cena telefonicky“ Notino uvádza „Volať“. <a class="u" href="https://www.notino.sk/salony/andrea_nechty/" rel="noopener">Otvoriť profil na Notino →</a></p>
+    </div>
+  </section>
+
+  <section class="in gal" id="vzory" aria-labelledby="vz-h">
+    <div class="gal-head">
+      <h2 id="vz-h">Hárok vzoriek</h2>
+      <p>Práce zo salónu — fotky z ich Facebooku. Mliečne, francúzske, kvietky aj neón.</p>
+    </div>
+    <div class="sheet board">
+      <figure class="stk big"><img src="assets/nechty-mliecne.webp" width="540" height="530" alt="Krátke mliečne biele gélové nechty na prešívanej podložke" loading="lazy"></figure>
+      <figure class="stk"><img src="assets/nechty-neon.webp" width="318" height="315" alt="Neónové nechty v oranžovej, zelenej, modrej a koralovej" loading="lazy"></figure>
+      <figure class="stk"><img src="assets/nechty-kvietky-french.webp" width="315" height="315" alt="Biela francúzska manikúra s ružovými kvietkami" loading="lazy"></figure>
+      <figure class="stk"><img src="assets/nechty-modra-french.webp" width="315" height="315" alt="Francúzska manikúra s tyrkysovou špičkou a kvetinou" loading="lazy"></figure>
+      <figure class="stk"><img src="assets/nechty-ruzove-bodky.webp" width="315" height="315" alt="Svetloružové nechty s drobnými bodkami" loading="lazy"></figure>
+      <figure class="stk"><img src="assets/nechty-broskynova-french.webp" width="315" height="315" alt="Prírodné nechty s broskyňovou francúzskou špičkou" loading="lazy"></figure>
+      <figure class="stk"><img src="assets/nechty-levandulove.webp" width="315" height="315" alt="Oválne nechty v jemnej levanduľovej farbe" loading="lazy"></figure>
+      <figure class="stk"><img src="assets/nechty-ruzove.webp" width="315" height="315" alt="Svetloružové gélové nechty oválneho tvaru" loading="lazy"></figure>
+      <figure class="stk"><img src="assets/nechty-neon-ruzova.webp" width="315" height="315" alt="Neónovo ružové nechty s trblietavým zdobením na jednom nechte" loading="lazy"></figure>
+    </div>
+  </section>
+
+  <section class="in kon" id="kontakt" aria-labelledby="kon-h">
+    <div class="sheet">
+      <div>
+        <h2 id="kon-h">Kontakt</h2>
+        <span class="lbl" style="margin-top:18px">Telefón</span>
+        <a class="big-tel tn" href="tel:+421903882418">0903 882 418</a>
+        <ul class="links">
+          <li><a class="u" href="https://www.instagram.com/andrea_nechty" rel="noopener">Instagram @andrea_nechty →</a></li>
+          <li><a class="u" href="https://www.facebook.com/profile.php?id=100090645020920" rel="noopener">Facebook →</a></li>
+        </ul>
+      </div>
+      <div>
+        <span class="lbl">Adresa</span>
+        <address>Stanislava Biroša 660<br>014 01 Bytča</address>
+        <a class="u" style="display:inline-flex;min-height:44px;align-items:center;font-weight:800" href="https://www.google.com/maps/search/Andrea_nechty+Byt%C4%8Da" rel="noopener">Google Maps →</a>
+      </div>
+      <div>
+        <span class="lbl">Otváracie hodiny</span>
+        <p>Na objednanie — termín cez telefón alebo Notino.</p>
+        <small>Notino uvádza „Otvorené na objednanie“, konkrétne hodiny nezverejnené — overiť.</small>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="in"><span>Neoficiálny návrh webu · webdavid.sk · 2026</span><span>Fotky: Facebook stránka Andrea_nechty</span></div></footer>
+
+<nav class="mbar" aria-label="Rýchle akcie">
+  <a href="tel:+421903882418">Zavolať</a>
+  <a href="https://www.notino.sk/salony/andrea_nechty/" rel="noopener">Notino</a>
+</nav>
